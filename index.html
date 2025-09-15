@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa Aziende</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- SheetJS -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- JS personalizzato -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>Mappa Aziende</h1>
+
+  <div id="controls">
+    <input type="file" id="fileInput" accept=".csv, .xlsx, .xls">
+
+    <div id="multiFilters">
+      <button id="addFilterBtn">Aggiungi filtro</button>
+    </div>
+    <button id="applyFiltersBtn">Applica filtri</button>
+    <button id="clearFiltersBtn">Pulisci tutti i filtri</button>
+
+    <button id="popupColumnsBtn">Seleziona colonne popup</button>
+    <div id="popupColumnsMenu" class="hidden"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="tableContainer">
+    <table id="companyTable">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+</html>
