@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#map {
+  width: 90%;
+  max-width: 1200px;
+  height: 60vh;
+  margin: 0 auto 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#tableContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  overflow-x: auto;
+}
+
+#companyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+#companyTable th, #companyTable td {
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#companyTable th {
+  background-color: #f0f0f0;
+}
+
+#popupColumnsMenu {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+label, select, input[type="file"], button, input[type="text"] {
+  margin: 5px;
+  display: inline-block;
+}
+.filterRow {
+  margin: 3px 0;
+}
